@@ -1,0 +1,177 @@
+* {
+  box-sizing: border-box;
+  text-align: center;
+}
+
+body {
+  font-family: 'Signika', sans-serif;
+}
+
+.hidden {
+  display: none;
+}
+
+.image {
+  width: 500px;
+  max-height: 500px;
+}
+
+.col-6 p {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.button {
+  border-radius:6px;
+  font-size: 20px;
+  text-decoration: none;
+  cursor: pointer;
+  border: 1px grey solid;
+  box-shadow: 2px 3px black;
+  font-size: 25px;
+  width: 150px;
+}
+
+.button:hover {
+  background-color: rgb(241, 234, 234);
+}
+
+.questionPage {
+  margin-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 640px;
+}
+
+.optionForm {
+  text-align: left;
+  margin-top: 20px;
+  font-size: 20px;
+  padding: 2px;
+}
+
+.optionForm legend {
+  text-align: left;
+}
+
+.options {
+  text-align: left;
+}
+
+.formsubmitbutton {
+  margin-top: 15px;
+}
+
+.optionForm > div > label, .optionForm > div > input {
+  cursor: pointer;
+}
+
+.selectOptionModal {
+  position: fixed;
+  width: 300px;
+  height: 150px;
+  border: 3px black solid;
+  border-radius: 10px;
+  background-color: lightblue;
+  color: white;
+  font-size: 20px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.feedbackModal p {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.summaryPage {
+  margin-top: 50px;
+  padding: 10px;
+}
+
+.summaryPage p {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/*Responsive design*/
+.row {
+  max-width: 880px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: 0 auto;
+}
+
+/* Clearfix */
+header::before,
+header::after {
+    display: table;
+    content: '';
+}
+
+header::after {
+    clear: both;
+}
+
+.col-6, .col-12 {
+  float: left;
+  padding-left: 1.04166666%;
+  padding-right: 1.04166666%;
+  width: 100%
+}
+
+
+/* Non-mobile, grid */
+@media only screen and (min-width: 640px) {
+  .col-6 {
+    width: 50%;
+  }
+
+  .col-12 {
+    width: 100%;
+  }
+
+  .optionForm {
+    margin-left: 90px;
+  }
+}
+
+@media only screen and (min-width: 820px) {
+  .optionForm {
+    margin-left: 160px;
+  }
+}
+
+
+/*Mobile styling*/
+@media only screen and (max-width: 640px) {
+  .image {
+    width: 100%;
+  }
+  
+  .questionPage {
+    width: 100%;
+    padding: 20px;
+  }
+
+  .col-6 p {
+  font-size: 25px;
+  margin: 5px;
+  }
+
+  .optionForm{
+  font-size: 25px;
+  margin-left: 10px;
+  padding: 2px;
+  }
+
+  .summaryPage p {
+  font-size: 25px;
+}
+
+  .button {
+    font-size: 30px;
+    width: 200px;
+  }
+}

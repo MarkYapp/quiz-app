@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="http://meyerweb.com/eric/tools/css/reset/ " rel="stylesheet">
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.1.1/normalize.css" rel="stylesheet">
+	<title>Tour de France Quiz</title>
+	<meta name="description" content="Test your knowledge of the Tour de France">
+	<link href="index.css" rel="stylesheet" type="text/css" />
+	<link href="https://fonts.googleapis.com/css?family=Signika" rel="stylesheet">
+	<script src="questiondata.js"></script>
+</head>
+
+<body>
+	<header role="banner" class="row hidden">
+		<div class="col-6">
+			<p>Question <span class="currentQuestionCount"></span> of 10</p>
+		</div>
+		<div class="col-6">
+			<p>Your score: <span class="userCorrectScore"></span> right / <span class="userIncorrectScore"></span> wrong</p>
+		</div>
+	</header>
+	<main role="main" class="row">
+		<div class="introPage">
+			<h1>Test Your Knowledge of the Tour de France</h1>
+			<img class="image" src="https://s27394.pcdn.co/wp-content/uploads/2018/07/GettyImages-1007307676-800x534.jpg" alt="Pro cyclests ride the Champs Elysees">
+			<h2>Rider's ready?</h2>
+			<button type="button" class="button beginButton">Start!</button>
+		</div>
+
+		<section class="questionPage hidden col-12">
+			
+		</section>
+
+		<div class="selectOptionModal hidden">
+			<p>Please select an option</p>
+			<button class="button closeSelectOptionModal">OK</button>
+		</div>
+
+		<div class="feedbackModal hidden">
+			<img class="feedbackImage image" src="" alt="">
+			<p></p>
+			<button class="nextQuestionButton button">Next</button>
+		</div>
+
+		<div class="summaryPage hidden">
+			<img class="image summaryPageImage" src="" alt="A cyclist drinking beer">
+			<p></p>
+			<button class="startOverButton button">Start over</button>
+		</div>
+	</main>
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js">
+
+	</script>
+	<script src="index.js"></script>
+</body>
+
+</html>
