@@ -34,12 +34,9 @@ function updateCurrentQuestion() {
           </div>
           <div class="options">
           <input type="radio" id="optiond" value="d" name="option">
-          <label class="optionc" for="optiond">${questions[currentq].d}</label><br>
+          <label class="optiond" for="optiond">${questions[currentq].d}</label><br>
           </div>
-          <div class="options">
-          <label class="optiond" for="optiond"></label><br>
           <input type="submit" value="Submit" class="formSubmitButton button">
-          </div>
         </form>`);
   $("input:checked").val([]);
 }

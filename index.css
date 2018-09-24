@@ -72,8 +72,8 @@ body {
   height: 150px;
   border: 3px black solid;
   border-radius: 10px;
-  background-color: lightblue;
-  color: white;
+  background-color: lightgoldenrodyellow;
+  font-weight: bold;
   font-size: 20px;
   left: 50%;
   top: 50%;
